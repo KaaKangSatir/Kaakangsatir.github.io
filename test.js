@@ -103,4 +103,4 @@ bot.on('ready', async () => { // If The User Was Ready
 })
 
 
-bot.login(OTAxMzM3MzU0ODg5OTk0MzEw.GNLBG0.AEpwPTqrKmgpD9stfpucruhocnXefEZlA0wnoI) // Login To The User
+bot.login(OTAxMzM3MzU0ODg5OTk0MzEw.Gt7RI3.PiSfQSTDCZANJVYuVm9lcgEAoqBxPQC-ASCtbY) // Login To The User
