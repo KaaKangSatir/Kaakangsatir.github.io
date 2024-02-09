@@ -103,4 +103,4 @@ bot.on('ready', async () => { // If The User Was Ready
 })
 
 
-bot.login(process.env.token) // Login To The User
+bot.login(OTAxMzM3MzU0ODg5OTk0MzEw.Gjfv5a.OahUMnk1OjnO2mcKfnFJKuDD3v4wFWE76rAB18) // Login To The User
