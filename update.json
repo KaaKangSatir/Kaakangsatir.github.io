@@ -2,9 +2,9 @@
     "app_status": true,
     "game_version": "13.5",
     "game_url": "https://alynsampmobile.pro/game/app-game-release.apk",
-    "full_data_url": "https://alynsampmobile.pro/game/app-game-release.apk",
+    "full_data_url": "https://raw.githubusercontent.com/alyn-dev/Alyn_SAMPMOBILE/main/data/list_old.json",
     "lite_data_url": "",
 
-    "data_url": "https://alynsampmobile.pro/game/app-game-release.apk",
+    "data_url": "https://raw.githubusercontent.com/alyn-dev/Alyn_SAMPMOBILE/main/data/list_old.json",
     "obb_url": "https://raw.githubusercontent.com/ALYNADV/samp_mobile_client/main/obb/list.json"
 }
