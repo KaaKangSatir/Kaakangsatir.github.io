@@ -1,10 +1,7 @@
 {
-    "launcher_version": "2.5",
-    "launcher_url": "",
-    
-    "game_version": "2.5",
+    "app_status": true,
+    "game_version": "13.5",
     "game_url": "",
-    
     "full_data_url": "",
     "lite_data_url": "",
 
