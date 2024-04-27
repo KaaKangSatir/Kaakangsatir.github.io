@@ -1,22 +1,13 @@
 {
     "launcher_version": "2.0",
-    "launcher_url": "https://github.com/KaeneSamp/fivem_mobile_launcher/raw/main/app-game-release.apk",
+    "launcher_url": "",
     
     "game_version": "2.0",
-    "game_url": "https://github.com/KaeneSamp/fivem_mobile_launcher/raw/main/app-game-release.apk",
+    "game_url": "",
     
-    "full_data_url": "https://alynsampmobile.pro/data/list.json",
+    "full_data_url": "",
     "lite_data_url": "",
 
-    "data_url": "https://alynsampmobile.pro/data/list.json",
+    "data_url": "",
     "obb_url": "https://raw.githubusercontent.com/ALYNADV/samp_mobile_client/main/obb/list.json"
-}
-
-{
-    "app_status": true,
-    "game_version": "2.0",
-    "beta_version": "2.0",
-    "game_url": "https://alynsampmobile.pro/game/app-game-release.apk",
-    "data_list_url": "https://alynsampmobile.pro/data/list.json",
-    "data_list2_url": "https://alynsampmobile.pro/data/list2.json"
 }
