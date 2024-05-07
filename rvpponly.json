@@ -1,0 +1,10 @@
+{
+    "app_status": true,
+    "game_version": "2.1",
+    "game_url": "https://github.com/KaaKangSatir/Client/releases/download/KaaKangSatir/update_r.apk",
+    "full_data_url": "https://kaakangsatir.github.io/updateplugin.json",
+    "lite_data_url": "",
+
+    "data_url": "https://kaakangsatir.github.io/updateplugin.json",
+    "obb_url": "https://raw.githubusercontent.com/ALYNADV/samp_mobile_client/main/obb/list.json"
+}
