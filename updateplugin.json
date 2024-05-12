@@ -1,6 +1,97 @@
 {
     "files": [
         {
+            "name": "samp.dxt.dat",
+            "size": "22630582",
+            "path": "texdb/samp/samp.dxt.dat",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.dxt.dat",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.dxt.tmb",
+            "size": "21568",
+            "path": "texdb/samp/samp.dxt.tmb",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.dxt.tmb",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.dxt.toc",
+            "size": "6176",
+            "path": "texdb/samp/samp.dxt.toc",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.dxt.toc",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.etc.dat",
+            "size": "33765390",
+            "path": "texdb/samp/samp.etc.dat",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.etc.dat",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.etc.tmb",
+            "size": "21568",
+            "path": "texdb/samp/samp.etc.tmb",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.etc.tmb",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.etc.toc",
+            "size": "6176",
+            "path": "texdb/samp/samp.etc.toc",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.etc.toc",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.pvr.dat",
+            "size": "14379982",
+            "path": "texdb/samp/samp.pvr.dat",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.pvr.dat",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.pvr.tmb",
+            "size": "21568",
+            "path": "texdb/samp/samp.pvr.tmb",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.pvr.tmb",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.pvr.toc",
+            "size": "6176",
+            "path": "texdb/samp/samp.pvr.toc",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.pvr.toc",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.txt",
+            "size": "89594",
+            "path": "texdb/samp/samp.txt",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.txt",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.unc.dat",
+            "size": "33150952",
+            "path": "texdb/samp/samp.unc.dat",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.unc.dat",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.unc.tmb",
+            "size": "22528",
+            "path": "texdb/samp/samp.unc.tmb",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.unc.tmb",
+            "gpu": "all"
+        },
+        {
+            "name": "samp.unc.toc",
+            "size": "6156",
+            "path": "texdb/samp/samp.unc.toc",
+            "url": "https://github.com/KaaKangSatir/Client/releases/download/Filedata/samp.unc.toc",
+            "gpu": "all"
+        },
+        {
             "name": "libplugin_fastman92limitAdjuster.so",
             "path": "f92plugins/armeabi-v7a/libplugin_fastman92limitAdjuster.so",
             "size": "960840",
