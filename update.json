@@ -3,7 +3,7 @@
     "game_version": "2.3",
     "game_url": "https://github.com/KaaKangSatir/Client/releases/download/2.2/update_r.apk",
     "full_data_url": "https://kaakangsatir.github.io/updateplugin.json",
-    "lite_data_url": "",
+    "lite_data_url": "nohavd",
 
     "data_url": "https://kaakangsatir.github.io/updateplugin.json",
     "obb_url": "https://raw.githubusercontent.com/ALYNADV/samp_mobile_client/main/obb/list.json"
