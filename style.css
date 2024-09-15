@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-theme {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Profile Card Styles */
+.profile-card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme .profile-card {
+    background-color: #444;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #FF0000;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+body.dark-theme .profile-image img {
+    border-color: #FF6347;
+}
+
+.profile-info h2 {
+    margin: 10px 0;
+}
+
+.profile-info p {
+    color: #777;
+    margin: 10px 0;
+}
+
+body.dark-theme .profile-info p {
+    color: #bbb;
+}
+
+/* Links Container */
+.links-container {
+    margin-top: 20px;
+}
+
+.link-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.link-item i {
+    margin-right: 10px;
+}
+
+body.dark-theme .link-item {
+    color: #FF6347;
+}
+
+/* Toggle Switch Styles */
+.switch {
+    display: none; /* Sembunyikan input checkbox */
+}
+
+.slider {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: background-color 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #FF0000; /* Warna background untuk tema terang */
+}
+
+input:checked + .slider::before {
+    transform: translateX(14px);
+}
+
+/* Dark Theme Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .link-card {
+        background-color: #5555; /* Warna latar belakang untuk tema gelap */
+    }
+
+    .slider {
+        background-color: #666;
+    }
+
+    input:checked + .slider {
+        background-color: #FF6347; /* Warna background untuk tema gelap */
+    }
+}
