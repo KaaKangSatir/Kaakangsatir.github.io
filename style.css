@@ -5,18 +5,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('mylove.jpg');
     margin: 0;
     overflow: hidden;
     transition: background-color 0.3s, color 0.3s;
 }
 
 body.light-theme {
+    background-image: url('mylove.jpg');
     background-color: #f4f4f4;
     color: #000;
 }
 
 body.dark-theme {
+    background-image: url('nama.png');
     background-color: #333;
     color: #fff;
 }
