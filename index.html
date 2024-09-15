@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaaKangSatir Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://telegra.ph/file/63918dccba2f979c6b5b8.jpg">
+</head>
+<body class="light-theme">
+    <div class="profile-card">
+        <div class="profile-image">
+            <img src="https://telegra.ph/file/63918dccba2f979c6b5b8.jpg" alt="Profile Image">
+        </div>
+        <div class="profile-info">
+            <h2>KaaKangSatir</h2>
+            <p>Newbie Developer</p>
+            <p>Hai! Saya Davi, seorang pemuda berusia 17 tahun dari Kepulauan Sumatera. Saya adalah seseorang yang senang menjelajahi teknologi dan seni, serta selalu mencari tantangan baru untuk dikembangkan.</p>
+        </div>
+        <div class="links-container">
+            <div class="link-card">
+                <a href="https://wa.me/6285609279108" class="link-item">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </div>
+            <div class="link-card">
+                <a href="https://youtube.com/@kaakangsatir?si=6C6udoDbirjJI9HL  " class="link-item">
+                    <i class="fab fa-youtube"></i>
+                    Youtube
+                </a>
+            </div>
+            <div class="link-card">
+                <a href="https://github.com/KaaKangSatir" class="link-item">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+            <input type="checkbox" id="theme-toggle" class="switch">
+            <label for="theme-toggle" class="slider"></label>
+        </div>
+    </div>
+
+    <script>
+        // Function to set theme based on localStorage or prefers-color-scheme
+        function setTheme() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const savedTheme = localStorage.getItem('theme');
+
+            // Check if theme preference is saved in localStorage
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                themeToggle.checked = true;
+            } else {
+                // Check prefers-color-scheme to detect system theme preference
+                const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.body.classList.toggle('dark-theme', prefersDarkMode);
+                localStorage.setItem('theme', prefersDarkMode ? 'dark' : 'light');
+                themeToggle.checked = prefersDarkMode;
+            }
+
+            // Toggle theme on change
+            themeToggle.addEventListener('change', () => {
+                document.body.classList.toggle('dark-theme');
+                localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+            });
+        }
+
+        // Call setTheme function when document is ready
+        document.addEventListener('DOMContentLoaded', setTheme);
+    </script>
+</body>
+</html>
