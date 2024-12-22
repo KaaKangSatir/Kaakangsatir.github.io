@@ -7,7 +7,7 @@ body {
     height: 100vh;
     background-size: cover; /* Memastikan gambar menutupi seluruh area */
   background-position: center; /* Memastikan gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  background-repeat: no-repeat; /* Menghindarii pengulangan gambar */
   background-attachment: fixed; 
     margin: 0;
     overflow: hidden;
