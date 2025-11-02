@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Blue Archive Search"",
+    "description": "Website yg bisa mencari informasi karakter blue archive",
+    "image": "https://kaakangsatir.github.io/web3.jpg",
+    "link": "https://bluearchive-search-website.vercel.app/",
+    "github": "https://github.com/KaaKangSatir/bluearchive-search-website"
+  },
+  {
+    "title": "Shortlink Tracking",
+    "description": "Website Shortlink yg berisi alat tracking yg bisa melacak seseorang",
+    "image": "https://kaakangsatir.github.io/web2.jpg",
+    "link": "https://kaakangsatir.vercel.app",
+    "github": "https://github.com/KaaKangSatir/website-tracking-tool"
+  },
+  {
+    "title": "Spotify Download"",
+    "description": "Aplikasi untuk mengunduh musik dari Spotify",
+    "image": "https://kaakangsatir.github.io/web1.jpg",
+    "link": "https://spotifydownload.vercel.app",
+    "github": "https://github.com/kaakangsatir/dapurkita-app"
+  }
+]
