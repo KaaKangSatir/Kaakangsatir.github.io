@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Login Live Demo</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        document.documentElement.classList.add('motion-loading');
+        setTimeout(() => {
+            document.documentElement.classList.remove('motion-loading');
+        }, 1000);
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #4F46E5;
+            --primary-hover: #4338CA;
+            --bg-color: #F9FAFB;
+            --text-main: #111827;
+            --text-muted: #6B7280;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            /* Mencegah scrollbar muncul tiba-tiba saat animasi dari bawah */
+            overflow-x: hidden; 
+        }
+
+        /* Menyembunyikan container utama sebelum animasi page load dimulai */
+        .motion-loading .page-container {
+            opacity: 0;
+        }
+
+        .page-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Card Style */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* List Langkah-langkah */
+        .steps {
+            list-style: none;
+            padding: 0;
+        }
+
+        .steps li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .steps li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Kredensial Grid untuk 4 Akun */
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .credential-box {
+            background-color: #EEF2FF;
+            border: 1px dashed var(--primary-color);
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .credential-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #C7D2FE;
+            padding-bottom: 8px;
+        }
+
+        .cred-item {
+            margin: 10px 0;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .cred-item code {
+            background-color: #E0E7FF;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+        }
+
+        /* Tombol & Link */
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(79, 70, 229, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Tombol Show Password */
+        .toggle-btn {
+            background: var(--primary-color);
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        
+        .toggle-btn:hover {
+            background: var(--primary-hover);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mainPage" class="page-container">
+        
+        <header>
+            <h1>Panduan Akses Live Demo</h1>
+            <p>Ikuti langkah-langkah di bawah ini untuk mencoba sistem kami secara langsung.</p>
+        </header>
+
+        <div class="card">
+            <h2>Langkah-langkah Login</h2>
+            <ul class="steps">
+                <li>Klik tombol <strong>"Menuju Halaman Demo"</strong> di bagian paling bawah halaman ini.</li>
+                <li>Setelah halaman login terbuka, pilih salah satu peran (role) yang ingin Anda uji coba.</li>
+                <li>Masukkan <strong>Username</strong> dan <strong>Password</strong> yang sesuai dengan tabel di bawah.</li>
+                <li>Klik tombol <strong>Masuk / Login</strong> pada website tersebut.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Akun Demo</h2>
+            <p>Kami menyediakan 4 jenis hak akses. Silakan gunakan akun di bawah ini untuk menguji fitur masing-masing peran:</p>
+            
+            <div id="credentials-grid" class="credentials-grid">
+                
+                <div class="credential-box animate-box">
+                    <h3>Admin (Administrator)</h3>
+                    <div class="cred-item">
+                        Username: <code>admin</code>
+                    </div>
+                    <div class="cred-item">
+                        Password: 
+                        <code class="pass-code" data-password="test12345">********</code>
+                        <button class="toggle-btn">Lihat</button>
+                    </div>
+                </div>
+
+                <div class="credential-box animate-box">
+                    <h3>SDM Guru</h3>
+                    <div class="cred-item">
+                        Username: <code>guru</code>
+                    </div>
+                    <div class="cred-item">
+                        Password: 
+                        <code class="pass-code" data-password="guru1234">********</code>
+                        <button class="toggle-btn">Lihat</button>
+                    </div>
+                </div>
+
+                <div class="credential-box animate-box">
+                    <h3>SDM Pembina</h3>
+                    <div class="cred-item">
+                        Username: <code>pembina</code>
+                    </div>
+                    <div class="cred-item">
+                        Password: 
+                        <code class="pass-code" data-password="pembina1234">********</code>
+                        <button class="toggle-btn">Lihat</button>
+                    </div>
+                </div>
+
+                <div class="credential-box animate-box">
+                    <h3>Wali Siswa</h3>
+                    <div class="cred-item">
+                        Username: <code>wali</code>
+                    </div>
+                    <div class="cred-item">
+                        Password: 
+                        <code class="pass-code" data-password="wali1234">********</code>
+                        <button class="toggle-btn">Lihat</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a href="https://link-website-anda.com/login" target="_blank" class="btn" id="demoLink">
+                Menuju Halaman Demo
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        const toggleButtons = document.querySelectorAll('.toggle-btn');
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const codeElement = this.previousElementSibling; 
+                const actualPassword = codeElement.getAttribute('data-password');
+                const isHidden = codeElement.innerText === '********';
+
+                if (isHidden) {
+                    codeElement.innerText = actualPassword;
+                    this.innerText = 'Sembunyikan';
+                    this.style.backgroundColor = '#6B7280'; 
+                } else {
+                    codeElement.innerText = '********';
+                    this.innerText = 'Lihat';
+                    this.style.backgroundColor = 'var(--primary-color)'; 
+                }
+            });
+        });
+    </script>
+
+    <script type="module">
+        import { animate, stagger, hover } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
+
+        // Lepas class penahan (failsafe) saat script dimuat
+        document.documentElement.classList.remove('motion-loading');
+
+        // ANIMASI UTAMA: Seluruh Halaman meluncur dari bawah (y: 60) ke posisi asli (y: 0) saat pertama kali dibuka
+        animate(
+            "#mainPage", 
+            { opacity: [0, 1], y: [60, 0] }, 
+            { duration: 0.8, easing: "ease-out" }
+        );
+
+        // Animasi Tambahan (Stagger): Memunculkan kotak-kotak akun satu-satu secara berurutan agar lebih estetik
+        animate(
+            ".animate-box", 
+            { opacity: [0, 1], scale: [0.9, 1] }, 
+            { delay: stagger(0.15, { startDelay: 0.4 }), duration: 0.5, easing: "ease-out" }
+        );
+
+        // Efek Hover Interaktif (Sentuhan Interaktif)
+        const cards = document.querySelectorAll(".card");
+        cards.forEach(card => {
+            hover(card, () => {
+                animate(card, { y: -5, boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1)" }, { duration: 0.2 });
+                return () => animate(card, { y: 0, boxShadow: "0 4px 6px -1px rgba(0,0,0,0.1)" }, { duration: 0.2 });
+            });
+        });
+
+        const btn = document.getElementById("demoLink");
+        if(btn) {
+            hover(btn, () => {
+                animate(btn, { scale: 1.05, backgroundColor: "#4338CA" }, { duration: 0.2 });
+                return () => animate(btn, { scale: 1, backgroundColor: "#4F46E5" }, { duration: 0.2 });
+            });
+        }
+    </script>
+
+</body>
+</html>
