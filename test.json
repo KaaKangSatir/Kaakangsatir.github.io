@@ -1,0 +1,69 @@
+-- Tabel untuk Catatan Konseling
+CREATE TABLE IF NOT EXISTS counseling_records (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    student_id INT(11) NOT NULL,
+    counselor_id INT(11) NOT NULL,
+    counseling_date DATE NOT NULL,
+
+    counseling_type ENUM(
+        'Pribadi',
+        'Sosial',
+        'Belajar',
+        'Karir'
+    ) NOT NULL DEFAULT 'Pribadi',
+
+    issue TEXT NOT NULL,
+    solution TEXT DEFAULT NULL,
+
+    status ENUM(
+        'Selesai',
+        'Dalam Pantauan'
+    ) NOT NULL DEFAULT 'Selesai',
+
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id)
+
+    -- Uncomment jika tabel students dan users ada
+    -- FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE,
+    -- FOREIGN KEY (counselor_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- Tabel untuk Prestasi / Poin Positif
+CREATE TABLE IF NOT EXISTS student_achievements (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    student_id INT(11) NOT NULL,
+    achievement_date DATE NOT NULL,
+    achievement_name VARCHAR(255) NOT NULL,
+
+    level ENUM(
+        'Sekolah',
+        'Kecamatan',
+        'Kabupaten',
+        'Provinsi',
+        'Nasional',
+        'Internasional'
+    ) NOT NULL DEFAULT 'Sekolah',
+
+    category ENUM(
+        'Akademik',
+        'Non-Akademik',
+        'Tahfidz',
+        'Karakter',
+        'Kedisiplinan'
+    ) NOT NULL DEFAULT 'Akademik',
+
+    `rank` VARCHAR(100) DEFAULT NULL,
+    points INT(11) NOT NULL DEFAULT 0,
+    notes TEXT DEFAULT NULL,
+    recorded_by INT(11) NOT NULL,
+
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id)
+
+    -- Uncomment jika tabel students dan users ada
+    -- FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE,
+    -- FOREIGN KEY (recorded_by) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
